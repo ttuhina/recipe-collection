@@ -1,12 +1,17 @@
 # Recipe Collection API
 
 This project is a Recipe Collection application that demonstrates a RESTful API using Node.js and Express. The application supports basic CRUD (Create, Read, Update, Delete) operations on a collection of recipes. The front-end is designed with Tailwind CSS and utilizes vanilla JavaScript to interact with the API.
-)
+
+
 Creating a recipe :
+
 ![Create recipe](https://github.com/ttuhina/recipe-collection/blob/main/screenshot/Screenshot%202024-07-11%20130207.png)
 
+
 Viewing recipes :
+
 ![view recipe](https://github.com/ttuhina/recipe-collection/blob/main/screenshot/Screenshot%202024-07-11%20130438.png)
+
 
 ## Table of Contents
 
