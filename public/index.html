@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FBEEC1; 
+        }
+        h1 {
+            font-size: 5rem; 
+            font-family: 'Brush Script MT', cursive; 
+            color: #D7263D;
+            text-align: center;
+        }
+        label {
+            font-family: 'Brush Script MT', cursive; 
+            font-size: 1.5rem;
+            color: #D7263D; 
+        }
+        input, textarea {
+            font-family: 'Times New Roman', serif; 
+            border-color: #D7263D;
+            background-color: #FFF5E1; 
+        }
+        button {
+            font-family: 'Times New Roman', serif; 
+            background-color: #D7263D; 
+            color: #FFF5E1;
+        }
+        .container {
+            background-color: #FFF5E1; 
+            border: 1px solid #D7263D;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .recipe-card {
+            background-color: #FFE1E6; 
+            border: 1px solid #D7263D; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-5xl font-bold mb-4">Recipe Collection</h1>
+        
+        <form id="recipeForm" class="mb-8 bg-white p-6 rounded-lg shadow-md">
+            <input type="hidden" id="recipeId">
+            <div class="mb-4">
+                <label for="name" class="block font-bold mb-2">Recipe Name:</label>
+                <input type="text" id="name" required class="w-full px-3 py-2 border rounded-lg">
+            </div>
+            <div class="mb-4">
+                <label for="ingredients" class="block font-bold mb-2">Ingredients:</label>
+                <textarea id="ingredients" required class="w-full px-3 py-2 border rounded-lg"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="instructions" class="block font-bold mb-2">Instructions:</label>
+                <textarea id="instructions" required class="w-full px-3 py-2 border rounded-lg"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="cuisine" class="block font-bold mb-2">Cuisine:</label>
+                <input type="text" id="cuisine" required class="w-full px-3 py-2 border rounded-lg">
+            </div>
+            <button type="submit" class="text-white px-4 py-2 rounded-lg hover:bg-blue-600">Save Recipe</button>
+        </form>
+
+        <div id="recipeList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
