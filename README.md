@@ -44,8 +44,8 @@ HTML, CSS (Tailwind CSS), JavaScript
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/recipe-collection-api.git
-   cd recipe-collection-api
+   git clone https://github.com/ttuhina/recipe-collection.git
+   cd recipe-collection
 2. **Install dependencies:**
    ```bash
    npm install
